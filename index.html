@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <link rel="stylesheet" href="css/styles.css">
+  <title>Leon-Guanajuato</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+         
+          <span>Leon-Guanajuato 𐔌՞. .՞𐦯</span>
+        </div>
+
+        <button class="menu-btn" id="menuBtn" type="button">
+          ☰ Menú
+        </button>
+
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#rutinas">Turismo</a></li>
+            <li><a href="#horarios">Nuevo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="nav-mobile" id="navMobile" aria-hidden="true">
+        <a href="#inicio">Inicio</a>
+        <a href="#rutinas">Turismo</a>
+        <a href="#horarios">Nuevo</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <div class="hero-main">
+            <div class="pill"> Lugar turistico 🗺</div>
+            <h1>León-Guanajuato 𐔌՞. .՞𐦯</h1>
+            <p>
+             Ciudad vibrante, llena de historia, cultura y sabores que te sorprenderán.Al visitar Guanajuato, hay varios puntos turísticos que valen la pena visitar: lugares que se destacan por tener una historia misteriosa, relatos que año con año atraen a nuevos turistas para que lo conozcan.
+            </p>
+            <div class="cta-row">
+              <button class="btn btn-primary" type="button" id="btnVerRutinas">
+                👀 Ver lugares
+              </button>
+              <button class="btn" type="button" id="btnSugerencia">
+                 🤔sugerencia rápida
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-card hero-img" aria-label="Imagen del gimnasio">
+          <img
+            alt="Gente entrenando en un gimnasio moderno"
+            src="img/LG.png"
+            loading="lazy"
+          />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RUTINAS -->
+    <section id="rutinas">
+      <div class="section-title">
+        <div>
+          <h2>Recomendaciones</h2>
+          <p>Descubre el patrimonio cultural de Guanajuato .</p>
+        </div>
+
+        <div class="filters" role="tablist" aria-label="Filtros de rutinas">
+          <button class="filter-btn active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-btn" type="button" data-filter="fuerza">Museos</button>
+          <button class="filter-btn" type="button" data-filter="cardio">Familia-Amigos</button>
+          <button class="filter-btn" type="button" data-filter="movilidad">Romantico</button>
+        </div>
+      </div>
+
+      <div class="grid" id="rutinasGrid">
+        <!-- Cards (JS también puede usarlas) -->
+        <article class="card" data-categoria="fuerza">
+          <div class="thumb">
+            <span class="badge">tour • momias y túneles</span>
+            <img
+              alt="Hombre haciendo sentadillas"
+              src="img/museo.avif"
+              loading="lazy"
+            />
+          </div>
+          <div class="body">
+            <h3>Museos públicos</h3>
+            <div class="meta">
+              <span class="chip">4.3 ★</span>
+              <span class="chip">240 MXN por persona</span>
+            </div>
+            <div class="actions">
+              <button class="small-btn rutina-btn"
+                type="button"
+                data-title="Museos públicos"
+                data-desc="Descubre la historia completa del pasado colonial de Guanajuato en esta inmersiva visita privada que revela el papel de la ciudad en el auge minero de la Nueva España y el sombrío legado de la Santa Inquisición."
+                data-img="img/momia.jpg"
+                data-bullets='["Explora una auténtica mina de plata del siglo XIX bajo tierra.","Visita el famoso Museo de las Momias con cuerpos reales conservados de forma natural.","Descubre la lucha de México por la independencia donde todo empezó."]'>
+                Ver
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="cardio">
+          <div class="thumb">
+            <span class="badge">  San Miguel de Allende</span>
+            <img
+              alt="Corriendo en cinta"
+              src="img/tequila.avif"
+              loading="lazy"
+            />
+          </div>
+          <div class="body">
+            <h3>Tour de Tacos y tequilas</h3>
+            <div class="meta">
+              <span class="chip">4.8 ★</span>
+              <span class="chip">1 472 MXN por persona</span>
+            </div>
+            <div class="actions">
+              <button class="small-btn rutina-btn"
+                type="button"
+                data-title="Tour de Tacos y tequilas"
+                data-img="img/tacos.avif"
+                data-bullets='["Disfruta de una cena completa y auténtica con bebidas","Conoce la comida y las tradiciones de la ciudad y del país","Visita los lugares favoritos de la zona y obtén consejos para aprovechar al máximo el resto de tu visita"]'>
+                Ver 
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="cardio">
+          <div class="thumb">
+            <span class="badge">Guanajuato</span>
+            <img
+              alt="Estiramientos antes del entrenamiento"
+              src="img/ruta.avif"
+              loading="lazy"
+            />
+          </div>
+          <div class="body">
+            <h3>Ruta a caballo</h3>
+            <div class="meta">
+              <span class="chip">5 ★</span>
+              <span class="chip">2 800 MXN por persona</span>
+            </div>
+            <div class="actions">
+              <button class="small-btn rutina-btn"
+                type="button"
+                data-title="Ruta a caballo"
+                data-desc="Explorarás las antiguas rutas que se utilizaban para transportar los minerales que caracterizan a la ciudad; en el transporte más amable, siempre en contacto con la naturaleza.."
+                data-img="img/caballo.avif"
+                data-bullets='["Admira la increíble flora y fauna que ofrece Guanajuato.","Conoce la historia de la ciudad.","Disfruta de la aventura siempre en contacto con la naturaleza."]'>
+                Ver 
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="fuerza">
+          <div class="thumb">
+            <span class="badge">Minas • fincas </span>
+            <img
+              alt="Persona entrenando con mancuernas"
+              src="img/mina.avif"
+              loading="lazy"
+            />
+          </div>
+          <div class="body">
+            <h3>Mineral de Pozos abandonados</h3>
+            <div class="meta">
+              <span class="chip">5 ★</span>
+              <span class="chip">4 226 MXN por grupo de hasta 4</span>
+            </div>
+            <div class="actions">
+              <button class="small-btn rutina-btn"
+                type="button"
+                data-title="Minas • fincas"
+                data-desc="
+                Mineral de Pozos, un antiguo pueblo minero de Guanajuato, desempeñó un papel crucial en la economía de la Nueva España debido a la abundancia de minerales en sus tierras. Durante décadas, las minas de la región fueron un motor económico, y los vestigios de esa época se conservan en sus minas abandonadas y haciendas históricas."
+                data-img="img/tunel.avif"
+                data-bullets='["Disfruta de vistas panorámicas de las ruinas desde miradores naturales","Sumérgete en la arquitectura colonial y las calles adoquinadas"]'>
+                Ver 
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="movilidad">
+          <div class="thumb">
+            <span class="badge"> • San Miguel </span>
+            <img
+              alt="Saltar cuerda"
+              src="img/amor.avif"
+              loading="lazy"
+            />
+          </div>
+          <div class="body">
+            <h3>Romántico paseo a caballo al atardecer</h3>
+            <div class="meta">
+              <span class="chip">5 ★</span>
+              <span class="chip">3 275 MXN por persona</span>
+            </div>
+            <div class="actions">
+              <button class="small-btn rutina-btn"
+                type="button"
+                data-title="Romántico paseo a caballo al atardecer"
+                data-desc="Monta a caballo al atardecer en la ciudad colonial de San Miguel de Allende. Explora las laderas locales y las calles más emblemáticas de la ciudad. "
+               data-img="img/pareja.avif"
+                data-bullets='["Conoce los lugares más bellos de San Miguel de Allende","Vive la experiencia de montar a caballo al atardecer y por la noche","Pasa una noche romántica y especial con tu pareja"]'>
+                Ver 
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-categoria="movilidad">
+          <div class="thumb">
+            <span class="badge">Centro • Guanajuato</span>
+            <img
+              alt="Estiramiento de brazos"
+              src="img/bs.jpg"
+              loading="lazy"
+            />
+          </div>
+          <div class="body">
+            <h3>Callejón del Beso</h3>
+            <div class="meta">
+             <span class="chip">5 ★</span>
+              <span class="chip">Gratuito</span>
+              
+            </div>
+            <div class="actions">
+              <button class="small-btn rutina-btn"
+                type="button"
+                data-title="Callejón del Beso"
+               data-desc="Los balcones de estas casas están tan próximos que, según la leyenda, si una pareja se para en ellos, podrán besarse y asegurar siete años de felicidad eterna."
+               data-img="img/callejon.jpg"
+                data-bullets='[" Los visitantes pueden optar por tomarse fotos en el tercer escalón, conocido como «el de la buena suerte», o entre los balcones. Los paquetes de fotos varían en precio y algunos incluyen un candado con las iniciales de la pareja para cerrar simbólicamente su amor."]' >
+                Ver 
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section id="horarios">
+      <div class="section-title">
+        <div>
+          <h2>Galeria y Gastronomía</h2>
+        </div>
+      </div>
+        <div class="card time-card">
+          <b>Saber más</b>
+          <div class="rows">
+            <div class="row"><span> <button onclick="window.open('https://nataly4321bu-bit.github.io/Galeria/')">Galeria</button></span></div>
+            <div class="row"><span> <button onclick="window.open('https://nataly4321bu-bit.github.io/gastronomia/')">Gastronomía</button></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="section-title">
+        <div>
+          <h2>Contacto</h2>
+          <p>Escríbenos y te recomendamos tu lugar turistico.</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card">
+          <form id="contactForm">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+            </div>
+
+            <div>
+              <label for="objetivo">Con quien vienes</label>
+              <input id="objetivo" name="objetivo" type="text" placeholder="Individual,Pareja,Amigos,Familia" required />
+            </div>
+
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="¿Cuántos días ?" required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+
+            <div class="toast" id="toast">
+              ✅ ¡Mensaje enviado! Te respondemos pronto con un lugar turistico disponible.
+            </div>
+          </form>
+        </div>
+
+        <div class="card" style="overflow:hidden;">
+          <div class="thumb" style="height: 220px;">
+            <span class="badge">Turismo</span>
+            <img
+              alt="Ambiente del gimnasio"
+              src="img/caballo.avif"
+              loading="lazy"
+            />
+          </div>
+          <div class="body">
+            <h3>¿Nuevo/a visitandonos?</h3>
+            <p style="margin:0;color:var(--muted);font-weight:650;">
+              Empieza con un lugar bonito y tranquilo.
+            </p>
+            <div class="meta">
+              <span class="chip">Ruta a caballo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+     <span style="color:rgba(255,255,255,.85)">GymFit</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-top">
+        <b id="modalTitle">Rutina</b>
+        <button class="close" type="button" id="modalClose">Cerrar ✕</button>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-img">
+          <img id="modalImg" alt="Imagen de rutina" src="" />
+        </div>
+
+        <div class="modal-content">
+          <p id="modalDesc"></p>
+        <ul class="bullets" id="modalBullets"></ul>
+          <div class="meta" style="margin-top:4px;">
+             <link rel="stylesheet" href="js/app.js">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
